@@ -1,0 +1,12 @@
+.partnets{
+    padding: 125px 0px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__item{
+        flex-basis: 25%;
+        
+    }
+}

@@ -1,0 +1,86 @@
+.team{
+    padding: 126px 0px 120px;
+    &__pretitle{
+        @extend %work-normal;
+        color: #7B7B7B;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__title{
+        max-width: 450px;
+        margin: 0 auto;
+        @extend %work-semibold;
+        font-size: 39px;
+        line-height: 48px;
+        color: #373737;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__title--color{
+        color: #FF5300;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-bottom: 15px;
+        position: relative;
+        &:hover{
+            .team__social-list{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &__item-img{
+        width: 270px;
+        height: 250px;
+        object-fit: cover;
+    }
+    &__item-name{
+        margin-bottom: 12px;
+        margin-top: 24px;
+        font-size: 20px;
+        color: #000000;
+        @extend %work-medium;
+    }
+    &__item-position{
+        color: #7B7B7B;
+        @extend %work-normal;
+    }
+    &__social-list{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+    }
+    &__social-element{
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+    &__social-link{
+        display: inline-block;
+        cursor: pointer;
+        padding: 8px;
+        background-color: #fff;
+        transition: all .5s ease;
+        svg{
+            fill: #FF5300;
+            transition: all .5s ease;
+        }
+        &:hover{
+            transition: all .5s ease;
+            background-color: #FF5300;
+            svg{
+                fill:#fff;
+                transition: all .5s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.blog{
+    padding: 120px 0px 90px;
+    background: #FFF7F4;
+    &__inner{
+        text-align: center;
+    }
+    &__pretitle{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 39.0625px;
+        line-height: 59px;
+        color: #373737;
+        margin-bottom: 60px;
+    }
+    &__items{
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+    }
+    &__item{
+        padding: 15px 15px 40px 15px;
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 370px;
+        box-sizing: border-box;
+        &:not(:last-child){
+            margin-right: 10p;
+        }
+    }
+    &__item-img{
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    &__item-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #373737;
+        margin-bottom: 15px;
+        display: block;
+    }
+    &__item-container{
+        display: flex;
+        font-family: 'Work Sans';
+        font-size: 10.24px;
+        line-height: 19px;
+        color: #373737;
+        margin-bottom: 18px;
+    }
+    &__item-data,
+    &__item-author,
+    &__item-comment{
+        padding-left: 19px;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    &__item-data{
+        &::before{
+            background-image:url('../../images/icons/timer.svg');
+        }
+    }
+    &__item-author{
+        &::before{
+            background-image:url('../../images/icons/person.svg');
+        }
+    }
+    &__item-comment{
+        &::before{
+            background-image:url('../../images/icons/message.svg');
+        }
+    }
+    &__item-text{
+        margin-bottom: 38px;
+    }
+    &__item-btn{
+        filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
+    }
+}
